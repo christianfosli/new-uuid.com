@@ -1,3 +1,5 @@
+use uuid::Uuid;
+
 fn main() {
-    println!("Hello, world!");
+    println!("{}", Uuid::new_v4());
 }
