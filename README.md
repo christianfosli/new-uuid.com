@@ -2,11 +2,13 @@
 
 [![.github/workflows/cicd.yaml](https://github.com/christianfosli/new-uuid.com/actions/workflows/cicd.yaml/badge.svg)](https://github.com/christianfosli/new-uuid.com/actions/workflows/cicd.yaml)
 
-Have you ever wanted to generate a uuid
+Have you ever wanted to quickly generate a uuid
 ([universally unique identifier](https://en.m.wikipedia.org/wiki/Universally_unique_identifier)),
 without leaving the terminal, and without installing any tools?
 
 Now you can :smile:
+
+## Usage
 
 ```sh
 # print to terminal
@@ -15,11 +17,13 @@ curl https://new-uuid.com
 # copy to clipboard (Windows git-bash or WSL)
 curl https://new-uuid.com | clip.exe
 
+# copy to clipboard (Windows PowerShell)
+curl.exe https://new-uuid.com | clip.exe
+
 # copy to clipboard (Linux with Wayland)
 curl https://new-uuid.com | wl-copy
 
-# copy to clipboard (Linux with xorg)
-curl https://new-uuid.com | xclip
+# etc...
 ```
 
 ## Development
@@ -31,7 +35,7 @@ This is inspired by [a blogpost by Cloudflare](https://blog.cloudflare.com/annou
 
 ### Build web assembly binary
 
-**Prerequisites**: Install rust. Add the wasm32-wasi target with `rustup target add wasm32-wasi`.
+**Prerequisites**: Install rust. Add the wasm32-wasi target with `rustup target add wasm32-wasi`. Clone repository.
 
 ```sh
 cargo build --target wasm32-wasi --release
