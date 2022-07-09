@@ -1,0 +1,5 @@
+name = "new-uuid"
+compatibility_date = "2022-06-09"
+
+[env.test]
+name = "new-uuid-test"

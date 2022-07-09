@@ -1,5 +1,7 @@
 # new-uuid.com
 
+[![.github/workflows/cicd.yaml](https://github.com/christianfosli/new-uuid.com/actions/workflows/cicd.yaml/badge.svg)](https://github.com/christianfosli/new-uuid.com/actions/workflows/cicd.yaml)
+
 Have you ever wanted to generate a uuid
 ([universally unique identifier](https://en.m.wikipedia.org/wiki/Universally_unique_identifier)),
 without leaving the terminal, and without installing any tools?
