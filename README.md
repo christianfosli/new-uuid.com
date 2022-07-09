@@ -33,7 +33,7 @@ and running it on Cloudflare's serverless platform; Cloudflare workers.
 
 This is inspired by [a blogpost by Cloudflare](https://blog.cloudflare.com/announcing-wasi-on-workers).
 
-### Build web assembly binary
+### Build web assembly wasm32-wasi binary
 
 **Prerequisites**: Install rust. Add the wasm32-wasi target with `rustup target add wasm32-wasi`. Clone repository.
 
@@ -74,6 +74,6 @@ See GitHub actions workflow for details.
   domain registrar to use Cloudflare's name servers</li>
 <li>Generate API token in Cloudflare</li>
 <li>Add the API token and Account ID to GitHub actions secrets</li>
-<li>Add custom domain for worker in Cloudfare dashboard settings</li>
+<li>Add custom domain for workers through Cloudflare dashboard</li>
 </ul>
 </details>
